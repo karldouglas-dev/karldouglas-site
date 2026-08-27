@@ -1,0 +1,97 @@
+{
+  "title": "Anthropic and the $30 Trillion Question: How Do You Value Intelligence? | Karl Douglas",
+  "slug": "anthropic-30-trillion-question",
+  "description": "Anthropic's >$30 trillion TAM isn't a revenue forecast — it's AI-addressable economic activity. A framework for valuing intelligence: run-rate multiples, gross margins, and trust as a moat.",
+  "keywords": [
+    "Anthropic valuation",
+    "Anthropic $30 trillion TAM",
+    "how to value AI companies",
+    "Anthropic IPO valuation",
+    "Claude enterprise AI",
+    "AI valuation framework",
+    "frontier model economics",
+    "AI gross margins",
+    "computational economy",
+    "AI value chain",
+    "AI moat trust",
+    "DeepSeek open weights",
+    "AI commoditization",
+    "agentic AI risk",
+    "Nvidia AI moat",
+    "physical AI robotics",
+    "price to sales multiple AI",
+    "Karl Douglas Thinking",
+    "Covenant Venture Capital",
+    "generative AI TAM"
+  ],
+  "ogTitle": "Anthropic and the $30 Trillion Question: How Do You Value Intelligence?",
+  "ogDescription": "A $2T valuation is 31x today's run rate but only 10x the 2028 forecast. Why gross margins and trust — not the headline TAM — may decide what Anthropic is really worth.",
+  "ogImage": "https://substackcdn.com/image/fetch/$s_!M_3A!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7bd5c2d3-a2a8-490b-b2ae-7e20e98ad142_1270x774.png",
+  "ogType": "article",
+  "ogUrl": "https://karlbdouglas.com/thinking/anthropic-30-trillion-question",
+  "ogSiteName": "Karl B. Douglas",
+  "ogLocale": "en_US",
+  "canonicalUrl": "https://karlbdouglas.com/thinking/anthropic-30-trillion-question",
+  "publishDate": "2026-08-27",
+  "modifiedDate": "2026-08-27",
+  "author": "Karl Douglas",
+  "category": "Thinking",
+  "section": "Investment Analysis",
+  "readingTime": "14 min read",
+  "wordCount": 3650,
+  "featured": true,
+  "twitterCard": {
+    "card": "summary_large_image",
+    "site": "@karlbdouglas",
+    "creator": "@karlbdouglas",
+    "title": "Anthropic and the $30 Trillion Question: How Do You Value Intelligence?",
+    "description": "A $2T valuation is 31x today's run rate but only 10x the 2028 forecast. Why gross margins and trust — not the headline TAM — may decide what Anthropic is worth.",
+    "image": "https://substackcdn.com/image/fetch/$s_!7SEb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd140ad5-f0ce-40c8-b207-3145c9ed7654_1822x1332.jpeg",
+    "imageAlt": "Anthropic and the $30 Trillion Question — an analysis of how to value AI intelligence."
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Anthropic and the $30 Trillion Question: How Do You Value Intelligence?",
+    "alternativeHeadline": "How much of the value AI creates can Anthropic actually capture?",
+    "description": "Anthropic's >$30 trillion TAM is best understood as AI-addressable economic activity, not forecast revenue. An investor's framework for valuing intelligence across run-rate multiples, gross margins, trust, and the AI value chain.",
+    "image": [
+      "https://www.cointribune.com/app/uploads/2026/08/Anthropic-Marche.png",
+      "https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/TpSFoqoG2M5MAAesg/xyghhogfqlmrqn1hplwe"
+    ],
+    "datePublished": "2026-08-27T09:00:00-04:00",
+    "dateModified": "2026-08-27T09:00:00-04:00",
+    "author": {
+      "@type": "Person",
+      "name": "Karl Douglas",
+      "url": "https://karlbdouglas.com/about",
+      "jobTitle": "Investor & Strategist",
+      "sameAs": [
+        "https://karlbdouglas.com"
+      ]
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Karl B. Douglas",
+      "url": "https://karlbdouglas.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/59th_Karlovy_Vary_International_Film_Festival%2C_Michael_Douglas_09%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://karlbdouglas.com/thinking/anthropic-30-trillion-question"
+    },
+    "articleSection": "Thinking",
+    "keywords": "Anthropic valuation, AI valuation framework, Claude, frontier models, computational economy, AI value chain, AI moat, TAM",
+    "wordCount": 3650,
+    "inLanguage": "en-US",
+    "isAccessibleForFree": true,
+    "about": [
+      { "@type": "Organization", "name": "Anthropic" },
+      { "@type": "Thing", "name": "Artificial intelligence valuation" },
+      { "@type": "Thing", "name": "Total addressable market" }
+    ]
+  }
+}
