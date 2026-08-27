@@ -1,17 +1,19 @@
 # Dependencies
 node_modules/
-.pnp
-.pnp.js
+.yarn/cache
+.yarn/install-state.gz
+.pnp.*
 
-# Build output
+# Next.js build output
 .next/
 out/
 dist/
 build/
 
-# Environment
+# Environment / secrets — never commit
 .env
 .env*.local
+.env.production
 
 # Logs
 *.log
@@ -25,3 +27,12 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+
+# TypeScript
+next-env.d.ts
+
+# Prisma local
+prisma/*.db
+
+# Platform metadata (do not commit)
+.abacus.donotdelete

@@ -1,0 +1,124 @@
+generator client {
+    provider = "prisma-client-js"
+    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+    output = "/home/ubuntu/karl_b_douglas_website/nextjs_space/node_modules/.prisma/client"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+enum ContentType {
+  ESSAY
+  FRAMEWORK
+  ARCHIVE
+  RESEARCH
+  VIDEO
+  INTERVIEW
+  COMMENTARY
+  ABOUT
+}
+
+enum ContentStatus {
+  DRAFT
+  PUBLISHED
+}
+
+enum ComplianceLevel {
+  GREEN
+  YELLOW
+  RED
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String?
+  role      String   @default("admin")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id          String         @id @default(cuid())
+  name        String         @unique
+  slug        String         @unique
+  description String?
+  entries     ContentEntry[]
+  createdAt   DateTime       @default(now())
+}
+
+model Tag {
+  id        String         @id @default(cuid())
+  name      String         @unique
+  slug      String         @unique
+  entries   ContentEntry[]  @relation("EntryTags")
+  createdAt DateTime       @default(now())
+}
+
+model ContentEntry {
+  id     String        @id @default(cuid())
+  type   ContentType
+  status ContentStatus @default(PUBLISHED)
+
+  title    String
+  subtitle String?
+  slug     String  @unique
+  summary  String?
+  body     String? // main body; null or bodyPlaceholder=true means "content forthcoming"
+  bodyPlaceholder Boolean @default(false)
+
+  author                  String    @default("Karl B. Douglas")
+  publicationDate         DateTime?
+  originalPublicationDate DateTime?
+  lastUpdated             DateTime? @updatedAt
+
+  categoryId String?
+  category   Category? @relation(fields: [categoryId], references: [id])
+  tags       Tag[]     @relation("EntryTags")
+
+  featuredImage String?
+  readingTime   Int?
+  videoEmbedUrl String?
+  transcript    String?
+
+  externalSourceLink String?
+  externalSourceName String?
+
+  disclosureText  String?
+  complianceLevel ComplianceLevel @default(GREEN)
+
+  // SEO
+  seoTitle        String?
+  metaDescription String?
+  canonicalUrl    String?
+  ogImage         String?
+
+  // Framework / display ordering
+  sortOrder Int     @default(0)
+  featured  Boolean @default(false)
+
+  // Archive-specific fields
+  originalSource              String?
+  originalThesis              String?
+  processContribution         String?
+  retrospectiveContext        String?
+  retrospectiveWhatSaw        String?
+  retrospectiveWhyMattered    String?
+  retrospectiveWhatHappened   String?
+  retrospectiveWhatRight      String?
+  retrospectiveUnderestimated String?
+  retrospectiveLearned        String?
+
+  // Self-referential related content
+  relatedTo   ContentEntry[] @relation("RelatedEntries")
+  relatedFrom ContentEntry[] @relation("RelatedEntries")
+
+  createdAt DateTime @default(now())
+
+  @@index([type, status])
+  @@index([featured])
+  @@index([publicationDate])
+}
